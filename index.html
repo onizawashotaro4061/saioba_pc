@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>劇団さいおうば公式サイト</title>
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'mre4qgi',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/space.css">
+</head>
+
+<body>
+    <div class="all">
+        <header>
+            <div class="header-container">
+                <div class="header_logo">
+                    <img src="./assets/img/header_trans.png" alt="" class="logo_img">
+                </div>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    &#9776;
+                    <!-- ハンバーガーアイコン -->
+                </div>
+            </div>
+            <nav id="nav-menu" class="nav-menu">
+                <ul>
+                    <li><a href="./nextstage.html">Next Stage</a></li>
+                    <li><a href="./news_1.html">NEWS</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./member.html">MEMBER</a></li>
+                    <li><a href="./history.html">HISTORY</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="height3vh"></div>
+            <!-- slideshow -->
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="./assets/img/top1.jpg" style="width:100%">
+                </div>
+                <div class="slide fade">
+                    <img src="./assets/img/top2.jpg" style="width:100%">
+                </div>
+                <div class="slide fade">
+                    <img src="./assets/img/top3.jpeg" style="width:100%">
+                </div>
+                <div class="slide fade">
+                    <img src="./assets/img/top4.JPG" style="width:100%">
+                </div>
+                <div class="slide fade">
+                    <img src="./assets/img/top5.jpg" style="width:100%">
+                </div>
+            </div>
+            <div class="height500px"></div>
+            <!-- Next Stage -->
+            <a href="./nextstage.html" class="history_link">
+                <div class="white_top">
+                    <div class="NextStage">
+                        <p class="title">Next Stage</p>
+                        <div class="height2vh"></div>
+                        <hr>
+                        <div class="height2vh"></div>
+                        <div class="img_NS">
+                            <img src="./assets/img/next_sam.PNG" alt="" class="image_NS">
+                        </div>
+                        <div class="height2vh"></div>
+                        <p class="text_NS stage_name">劇団さいおうば第五回公演</p>
+                        <p class="text_NS stage_name bold_text">「カミノコノミカ」</p>
+                        <div class="height2vh"></div>
+                        <p class="text_NS stage_name">
+                            ＠本多劇場グループ シアター711
+                        </p>
+                        <div class="height2vh"></div>
+                        <p class="text_NS stage_name">
+                            【スケジュール】</p>
+                        <div class="height2vh"></div>
+                        <p class="text_NS stage_name">
+                            6月13日(木)18:00
+                            <br>6月14日(金)18:00
+                            <br>6月15日(土)13:00/18:00
+                            <br>6月16日(日)13:00
+                        </p>
+                        <div class="height3vh"></div>
+                        <div class="am_top">and more→</div>
+                    </div>
+                </div>
+            </a>
+            <div class="height3vh"></div>
+            <a href="./news_1.html" class="history_link">
+                <div class="white_top">
+                    <div class="height2vh"></div>
+                    <div class="NEWS">
+                        <div class="title">NEWS</div>
+                        <div class="height2vh"></div>
+                        <hr>
+                        <div class="height2vh"></div>
+                        <p class="day">2024/03/10</p>
+                        <div class="height1vh"></div>
+                        <p class="text_NS stage_name text_news">【第9回全国学生演劇祭】
+                            <br>劇団さいおうば、観客賞を受賞</p>
+                        <div class="height3vh"></div>
+                        <div class="am_top">and more→</div>
+                    </div>
+                </div>
+            </a>
+
+        </main>
+        <footer>
+            <div class="link_contain">
+                <div><a class="link" href="./nextstage.html">NextStage</a></div>
+                <div><a class="link" href="./news_1.html">NEWS</a></div>
+                <div><a class="link" href="./about.html">ABOUT</a></div>
+                <div><a class="link" href="./member.html">MEMBER</a></div>
+                <div><a class="link" href="./history.html">HISTORY</a></div>
+                <div><a class="link" href="./contact.html">CONTACT</a></div>
+
+            </div>
+            <div class="sns_contain">
+                <a href="https://twitter.com/gekidan_saiouba" class="company_x_wrip">
+                    <img src="./assets/img/icon_X.PNG" alt="" class="company_x">
+                </a>
+                <a href="https://www.instagram.com/gekidan_saiouba/">
+                    <img src="./assets/img/icon_Instagram.PNG" alt="" class="company_insta">
+                </a>
+                <a href="https://www.youtube.com/@gekidansaiouba">
+                    <img src="./assets/img/icon_YouTube.PNG" alt="" class="company_youtube">
+                </a>
+            </div>
+            <div class="CC">
+                <p>All rights reserved</p>
+                <p>＠劇団さいおうば</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
