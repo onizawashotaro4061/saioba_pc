@@ -172,7 +172,7 @@ hr {
     line-height: 1.8;
 }
 .day{
-    font-size: 14px;
+    font-size: 1.5vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
 }
@@ -228,7 +228,7 @@ hr {
 }
 .bold_text{
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 25px;
     color: #ff8165;
 }
 
@@ -254,7 +254,7 @@ hr {
     margin-left: 14px;
 }
 .detail{
-    font-size: 14px;
+    font-size: 1.4vw;
     color: #ff8165;
     font-family: "kosugi-maru", sans-serif;
     font-weight: 400;
@@ -270,7 +270,7 @@ hr {
     height: auto;
 }
 .image_about_member{
-    width: 20%;
+    width: 80%;
     height: auto;
 }
 .headline{
@@ -350,23 +350,26 @@ hr {
     position: relative;
 }
 .member_sns{
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     top: 0;
     right: 0;
 }
-.img_mem_x{
-    padding-top: 16px;
+.img_mem_insta{
+    padding-top: 3px;
+    padding-right: 5px;
 }
 .member_x{
     width: auto;
-    height: 25px;
+    height: 36px;
 }
 .member_insta{
     width: auto;
-    height: 60px;
+    height: 30px;
 }
-
+.name_snsicon{
+    display: flex;
+}
 
 .image_sam{
     width: auto;
@@ -451,4 +454,14 @@ hr {
 }
 .epi_youtube{
     display: flex;
+}
+.intro_top{
+    display: flex;
+}
+
+.intro_top_left{
+    width: 50%;
+}
+.intro_top_right{
+    width: 50%;
 }
