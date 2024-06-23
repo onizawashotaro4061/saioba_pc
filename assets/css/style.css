@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -11,6 +11,7 @@ header {
     text-align: center;
     position: relative;
 }
+
 .header_logo {
     flex: 1;
     display: flex;
@@ -21,7 +22,8 @@ header {
     text-align: center;
     margin-left: 25px;
 }
-.logo_img{
+
+.logo_img {
     /* width: 60vw; */
     height: 10vh;
 }
@@ -38,7 +40,8 @@ header {
 .hamburger-menu {
     font-size: 30px;
     cursor: pointer;
-    display: none; /* 初期状態では非表示 */
+    display: none;
+    /* 初期状態では非表示 */
     /* flex: 1; */
     display: flex;
     justify-content: center;
@@ -51,7 +54,8 @@ header {
 .nav-menu {
     position: fixed;
     top: 0;
-    right: -250px; /* 初期状態で画面の外 */
+    right: -250px;
+    /* 初期状態で画面の外 */
     width: 250px;
     height: 100%;
     top: 14vh;
@@ -59,17 +63,21 @@ header {
     /* border-left: 1px solid #ccc; */
     /* box-shadow: -2px 0 5px rgba(0,0,0,0.5); */
     z-index: 1000;
-    transition: right 0.3s ease; /* トランジション効果 */
-    text-align: center; /* ナビゲーションメニューのテキストを中央揃え */
+    transition: right 0.3s ease;
+    /* トランジション効果 */
+    text-align: center;
+    /* ナビゲーションメニューのテキストを中央揃え */
 }
 
 .nav-menu.open {
-    right: 0; /* オープン状態で表示 */
+    right: 0;
+    /* オープン状態で表示 */
 }
 
 .nav-menu ul {
     list-style-type: none;
-    margin: 60px 0 0; /* ナビゲーションメニューの上部の余白を調整 */
+    margin: 60px 0 0;
+    /* ナビゲーションメニューの上部の余白を調整 */
     padding: 0;
 }
 
@@ -95,18 +103,21 @@ header {
 
     /* メニューが表示されたときのスタイル */
     .nav-menu.show {
-        opacity: 1; /* 不透明にする */
-        visibility: visible; /* 可視にする */
+        opacity: 1;
+        /* 不透明にする */
+        visibility: visible;
+        /* 可視にする */
     }
 }
 
 
 /* コンテンツエリアのスタイル */
 main {
-    background-color: #ff8165;
+    background-color: #f98e76;
     color: white;
     padding: 20px;
-    min-height: 100vh; /* コンテンツエリアを画面全体の高さにします */
+    min-height: 100vh;
+    /* コンテンツエリアを画面全体の高さにします */
 }
 
 /* slide-show */
@@ -114,7 +125,8 @@ main {
 .slideshow-container {
     position: relative;
     width: 100%;
-    max-width: 1000px; /* スライドショーの最大幅を設定 */
+    max-width: 1000px;
+    /* スライドショーの最大幅を設定 */
     margin: auto;
     justify-content: center;
     display: flex;
@@ -125,8 +137,10 @@ main {
     position: absolute;
     width: auto;
     height: 400px;
-    opacity: 0; /* 初期状態では透明 */
-    transition: opacity 1s ease; /* トランジションを追加 */
+    opacity: 0;
+    /* 初期状態では透明 */
+    transition: opacity 1s ease;
+    /* トランジションを追加 */
 }
 
 /* 画像 */
@@ -135,6 +149,7 @@ main {
     height: 400px;
     object-fit: cover;
 }
+
 /* Next Stage */
 
 
@@ -143,43 +158,52 @@ hr {
     height: 1px;
     background: white;
 }
-.text_NS{
+
+.text_NS {
     font-size: 1.5vw;
     font-family: "kosugi-maru", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-.text_NS_ns{
+
+.text_NS_ns {
     font-size: 1.5vw;
     font-family: "kosugi-maru", sans-serif;
     font-weight: 400;
     font-style: normal;
     margin-left: 10%;
 }
-.stage_name{
+
+.stage_name {
     text-align: center;
 }
-.img_NS{
+
+.img_NS {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.image_NS{
+
+.image_NS {
     width: 60%;
     height: auto;
 }
-.time_NS{
+
+.time_NS {
     line-height: 1.8;
 }
-.day{
+
+.day {
     font-size: 1.5vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
 }
-.kasou h1{
+
+.kasou h1 {
     padding-left: 20%;
 }
-.white{
+
+.white {
     background-color: rgb(255, 255, 255);
     min-height: 20vh;
     color: #3f3f3f;
@@ -188,8 +212,10 @@ hr {
     justify-content: center;
     /* display: flex; */
     margin: auto;
+    border-radius: 1vw;
 }
-.white_his{
+
+.white_his {
     background-color: rgb(255, 255, 255);
     min-height: 20vh;
     color: #3f3f3f;
@@ -199,8 +225,10 @@ hr {
     /* display: flex; */
     margin: auto;
     position: relative;
+    border-radius: 1vw;
 }
-.white_top{
+
+.white_top {
     background-color: rgb(255, 255, 255);
     min-height: 20vh;
     color: #3f3f3f;
@@ -210,99 +238,131 @@ hr {
     display: flex;
     margin: auto;
     position: relative;
+    border-radius: 1vw;
 }
-.white hr{
+
+.white hr {
     border: 0;
     height: 1px;
     background: #ff8165;
 
 }
-.title{
+
+.title {
     font-size: 23px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     color: #ff8165;
 }
-.text_news{
+
+.text_news {
     line-height: 1.5;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    /* デフォルトの下線を消します */
+    color: inherit;
+    /* リンクの色をテキスト色に合わせます */
 }
-.bold_text{
+
+.text_news:hover {
+    text-decoration: underline;
+}
+
+.bold_text {
     font-weight: bold;
     font-size: 25px;
     color: #ff8165;
 }
 
-.image_about{
+.image_about {
     width: 100%;
     height: auto;
 }
-.image_about_big{
+
+.image_about_big {
     width: 60%;
     height: auto;
 }
-.kasou{
+
+.kasou {
     padding: 50px;
 }
-.kasou_his{
+
+.kasou_his {
     padding: 20px;
 }
-.kasou_text{
+
+.kasou_text {
     line-height: 1.5;
 }
-.zisage{
+
+.zisage {
     text-indent: -1em;
     margin-left: 14px;
 }
-.detail{
+
+.detail {
     font-size: 1.4vw;
     color: #ff8165;
     font-family: "kosugi-maru", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-.img_about{
+
+.img_about {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.image_about{
+
+.image_about {
     width: 60%;
     height: auto;
 }
-.image_about_member{
+
+.image_about_member {
     width: 80%;
     height: auto;
 }
-.headline{
+
+.headline {
     color: #ff8165;
 }
-.headline1{
+
+.headline1 {
     color: #ff8165;
     margin-right: 1em;
 }
-.headline2{
+
+.headline2 {
     color: #ff8165;
     margin-right: 2em;
 }
-.headline3{
+
+.headline3 {
     color: #ff8165;
     margin-right: 3em;
 }
-.text_member{
+
+.text_member {
     font-size: 10px;
     font-family: "kosugi-maru", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-.image_nextstage{
+
+.image_nextstage {
     width: 30%;
     height: auto;
 }
-.title_nextstage{
+
+.title_nextstage {
     text-align: center;
 }
 
-.head_ns{
+.head_ns {
     font-size: 1.6vw;
     font-family: "kosugi-maru", sans-serif;
     font-weight: 400;
@@ -311,7 +371,8 @@ hr {
     line-height: 1.8;
     margin-left: 8.5%;
 }
-.head_ns_epi{
+
+.head_ns_epi {
     font-size: 1.6vw;
     font-family: "kosugi-maru", sans-serif;
     font-weight: 400;
@@ -320,7 +381,8 @@ hr {
     line-height: 1.8;
     margin-left: 10%;
 }
-.head{
+
+.head {
     font-size: 1.6vw;
     font-family: "kosugi-maru", sans-serif;
     font-weight: 400;
@@ -328,84 +390,133 @@ hr {
     color: #ff8165;
     line-height: 1.8;
 }
-.text_epi{
+
+.text_epi {
     font-size: 1.5vw;
 }
-.name{
+
+.name {
     color: #3f3f3f;
     margin-left: 1em;
     margin-left: 10%;
     font-size: 1.5vw;
 }
-.pole{
+
+.pole {
     margin-left: 10%;
     line-height: 1.8;
 
 }
-.nobr{
+
+.nobr {
     word-break: keep-all;
     overflow-wrap: break-word;
 }
-.member_intro{
+
+.member_intro {
     position: relative;
 }
-.member_sns{
+
+.member_sns {
     /* position: absolute; */
     display: flex;
     top: 0;
     right: 0;
 }
-.img_mem_insta{
+
+.img_mem_insta {
     padding-top: 3px;
     padding-right: 5px;
 }
-.member_x{
+
+.member_x {
     width: auto;
     height: 36px;
 }
-.member_insta{
+
+.member_insta {
     width: auto;
     height: 30px;
 }
-.name_snsicon{
+
+.name_snsicon {
     display: flex;
 }
 
-.image_sam{
+.image_sam {
     width: auto;
     height: 20vh;
 }
-.news_title{
+
+.news_title {
     text-align: center;
 }
-.history_title{
+
+.history_title {
     /* text-align: center; */
     font-size: 2.5vw;
 }
-.history_link{
+
+.history_link {
     text-decoration: none;
     position: relative;
 }
-.NextStage{
+
+.NextStage {
     position: relative;
 }
-.am_top{
+
+.am_top {
+    background-color: white;
+    width: 150px;
+    color: black;
+    border: solid 1.5px black;
+    border-radius: 5px;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 1.3vw;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+
+}
+
+.am_top:hover {
+    background-color: #008CBA;
+    color: white;
+    justify-content: center;
+}
+
+.am {
     position: absolute;
     bottom: 10px;
     right: 20px;
-
+    background-color: white;
+    width: 50px;
+    color: black;
+    border: solid 1.5px black;
+    border-radius: 5px;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 1.3vw;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
 }
-.am{
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-
+.am:hover {
+    background-color: #008CBA;
+    color: white;
+    justify-content: center;
 }
-.link_contain{
+
+.link_contain {
     padding-top: 5vh;
     padding-bottom: 3vh;
 }
-.link{
+
+.link {
     color: #ff8165;
     font-size: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -413,55 +524,66 @@ hr {
     text-decoration: none;
     padding-left: 20vw;
 }
-.sns_contain{
+
+.sns_contain {
     display: flex;
     justify-content: center;
     /* column-gap: 60px; */
     padding-bottom: 40px;
     align-items: center;
 }
-.company_x_wrip{
+
+.company_x_wrip {
     /* padding-top: 10px; */
     padding-left: 25px;
     padding-right: 6px;
 }
-.company_x{
+
+.company_x {
     width: auto;
     height: 35px;
 }
-.company_insta{
+
+.company_insta {
     width: auto;
     height: 90px;
 }
-.company_youtube{
+
+.company_youtube {
     width: auto;
     height: 60px;
 }
-.CC{
+
+.CC {
     padding-bottom: 15px;
     text-align: center;
-     font-family: "kosugi-maru", sans-serif;
+    font-family: "kosugi-maru", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-.image_youtube_maru{
+
+.image_youtube_maru {
     width: auto;
     height: 2.5vw;
 }
-.icon_youtube{
+
+.icon_youtube {
     right: 0;
     margin-left: 2vw;
 }
-.epi_youtube{
-    display: flex;
-}
-.intro_top{
+
+.epi_youtube {
     display: flex;
 }
 
-.intro_top_left{
+.intro_top {
+    display: flex;
+}
+
+.intro_top_left {
     width: 50%;
 }
-.intro_top_right{
+
+.intro_top_right {
     width: 50%;
 }
