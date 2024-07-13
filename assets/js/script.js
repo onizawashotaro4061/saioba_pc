@@ -66,7 +66,7 @@ function showSlides() {
         slides[i].style.opacity = "0"; // 全ての画像を透明にする
     }
     slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
+    if (slideIndex > slides.length) {slideIndex = 1}
     slides[slideIndex-1].style.opacity = "1"; // 選択された画像を不透明にする
     setTimeout(showSlides, 4000); // 2秒ごとに次のスライドを表示
 }
@@ -74,3 +74,53 @@ function showSlides() {
 
 //toggle
 
+// script.js
+// スクロールを監視してボタンの表示を制御
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollTopBtn.style.display = "block";
+    } else {
+        scrollTopBtn.style.display = "none";
+    }
+}
+
+// ボタンクリック時にトップに戻る
+document.getElementById("scrollTopBtn").onclick = function() {
+    scrollToTop();
+}
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+    // スクロールを監視してボタンの表示を制御
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    }
+
+    // ボタンクリック時にトップに戻る
+    document.getElementById("scrollTopBtn").onclick = function() {
+        scrollToTop();
+    }
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+});

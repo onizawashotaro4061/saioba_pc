@@ -35,8 +35,60 @@
             s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
+    <script>
+        // スクロールを監視してボタンの表示を制御
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollTopBtn.style.display = "block";
+    } else {
+        scrollTopBtn.style.display = "none";
+    }
+}
+
+// ボタンクリック時にトップに戻る
+document.getElementById("scrollTopBtn").onclick = function() {
+    scrollToTop();
+}
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+    // スクロールを監視してボタンの表示を制御
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    }
+
+    // ボタンクリック時にトップに戻る
+    document.getElementById("scrollTopBtn").onclick = function() {
+        scrollToTop();
+    }
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+});
+    </script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/space.css">
+    <link rel="icon" href="./assets/img/fabicon.png" type="image/png">
 </head>
 
 <body>
@@ -65,7 +117,7 @@
         <div class="kasou">
             <h1 class="history_title">第五回公演『カミノコノミカ』</h1>
             <div class="img_about">
-            <img src="./assets/img/title_5.JPG" alt="" class="image_about_big">
+            <img src="./assets/img/title_5.png" alt="" class="image_about_big">
         </div>
             <div class="height3vh"></div>
             <div class="white kasou">
@@ -136,11 +188,12 @@
                 <p class="text_NS kasou_text name">本多劇場グループ シアター711</p>
                 <div class="height2vh"></div>
             <div class="img_about">
-                <img src="./assets/img/fly_" alt="" class="image_nextstage">
-                <img src="./assets/img/fly_" alt="" class="image_nextstage">
+                <img src="./assets/img/next_info_front.png" alt="" class="image_nextstage">
+                <img src="./assets/img/next_info_back.png" alt="" class="image_nextstage">
             </div>
             </div>
         </div>
+        <img src="./assets/img/topback.png" id="scrollTopBtn" title="トップに戻る" alt="トップに戻る">
     </main>
     <footer>
             <div class="link_contain">

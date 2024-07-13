@@ -35,8 +35,60 @@
             s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
+    <script>
+        // スクロールを監視してボタンの表示を制御
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollTopBtn.style.display = "block";
+    } else {
+        scrollTopBtn.style.display = "none";
+    }
+}
+
+// ボタンクリック時にトップに戻る
+document.getElementById("scrollTopBtn").onclick = function() {
+    scrollToTop();
+}
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+    // スクロールを監視してボタンの表示を制御
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    }
+
+    // ボタンクリック時にトップに戻る
+    document.getElementById("scrollTopBtn").onclick = function() {
+        scrollToTop();
+    }
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+});
+    </script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/space.css">
+    <link rel="icon" href="./assets/img/fabicon.png" type="image/png">
 </head>
 
 <body>
@@ -130,6 +182,7 @@
             </div>
             </div>
         </div>
+        <img src="./assets/img/topback.png" id="scrollTopBtn" title="トップに戻る" alt="トップに戻る">
     </main>
     <footer>
             <div class="link_contain">
