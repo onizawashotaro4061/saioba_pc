@@ -4,8 +4,9 @@ import Slideshow from "@/components/Slideshow";
 export default function Home() {
   return (
     <>
-      <div className="h-4 sm:h-6 md:h-8"></div>
-      <Slideshow />
+      <div className="-mx-2 sm:-mx-4 lg:-mx-5">
+        <Slideshow />
+      </div>
       <div className="h-32 sm:h-48 md:h-64 lg:h-96"></div>
 
       {/* NextStage Section */}

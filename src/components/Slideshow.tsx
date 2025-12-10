@@ -24,7 +24,7 @@ export default function Slideshow() {
   }, []);
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto h-auto overflow-hidden rounded-lg shadow-lg">
+    <div className="relative w-full h-auto overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}
