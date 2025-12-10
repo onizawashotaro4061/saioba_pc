@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* フォント読み込み */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'GenJyuuGothic-P-Medium', 'Noto Sans JP', 'Segoe UI Symbol', 'Segoe UI', sans-serif;
+  background-color: #f98e76;
+  overflow-x: hidden;
+}
+
+/* Adobe Typekit font loading */
+.wf-loading {
+  visibility: hidden;
+}
+
+/* フォント定義用のユーティリティクラス */
+@layer utilities {
+  /* 日本語見出し */
+  .font-heading-ja {
+    font-family: 'mobo', 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+  }
+
+  /* 日本語小見出し */
+  .font-subheading-ja {
+    font-family: 'GenJyuuGothic-Monospace-Bold', 'Noto Sans JP', monospace;
+    font-weight: 700;
+  }
+
+  /* 日本語本文 */
+  .font-body-ja {
+    font-family: 'GenJyuuGothic-P-Medium', 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+  }
+
+  /* 英語見出し */
+  .font-heading-en {
+    font-family: 'Segoe UI Black', 'Arial Black', sans-serif;
+    font-weight: 900;
+  }
+
+  /* 英語本文 */
+  .font-body-en {
+    font-family: 'Segoe UI Symbol', 'Segoe UI', sans-serif;
+    font-weight: 400;
+  }
+}
+
+/* Responsive utilities */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container padding for mobile */
+@media (max-width: 640px) {
+  main {
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  main {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  main {
+    padding: 1.25rem;
+  }
+}
