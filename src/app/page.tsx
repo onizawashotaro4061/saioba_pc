@@ -7,7 +7,7 @@ export default function Home() {
       <div className="-mx-2 sm:-mx-4 lg:-mx-5">
         <Slideshow />
       </div>
-      <div className="h-32 sm:h-48 md:h-64 lg:h-96"></div>
+      <div className="h-2 sm:h-4 md:h-6 lg:h-8"></div>
 
       {/* NextStage Section */}
       <div className="history_link">
