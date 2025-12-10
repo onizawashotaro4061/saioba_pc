@@ -9,8 +9,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: { id: string } }) {
-  const stage = stagesData.find((s) => s.id === parseInt(params.id));
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const stage = stagesData.find((s) => s.id === parseInt(id));
 
   if (!stage) {
     return {
@@ -24,8 +25,9 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
   };
 }
 
-export default function StagePage({ params }: { params: { id: string } }) {
-  const stage = stagesData.find((s) => s.id === parseInt(params.id));
+export default async function StagePage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const stage = stagesData.find((s) => s.id === parseInt(id));
 
   if (!stage) {
     notFound();

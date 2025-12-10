@@ -8,8 +8,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: { id: string } }) {
-  const news = newsData.find((n) => n.id === parseInt(params.id));
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const news = newsData.find((n) => n.id === parseInt(id));
 
   if (!news) {
     return {
@@ -23,8 +24,9 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
   };
 }
 
-export default function NewsPage({ params }: { params: { id: string } }) {
-  const news = newsData.find((n) => n.id === parseInt(params.id));
+export default async function NewsPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const news = newsData.find((n) => n.id === parseInt(id));
 
   if (!news) {
     notFound();
