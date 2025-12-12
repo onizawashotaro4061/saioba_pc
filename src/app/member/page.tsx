@@ -81,12 +81,12 @@ export default function Member() {
               <div className="flex gap-3 sm:gap-4 mb-3 sm:mb-4">
                 {member.twitter && (
                   <a href={member.twitter} target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-                    <Image src="/img/icon_X.png" alt="X" width={40} height={40} className="w-6 h-6 sm:w-8 sm:h-8" />
+                    <Image src="/img/icon_X.PNG" alt="X" width={40} height={40} className="w-6 h-6 sm:w-8 sm:h-8" />
                   </a>
                 )}
                 {member.instagram && (
                   <a href={member.instagram} target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-                    <Image src="/img/icon_ig.png" alt="Instagram" width={40} height={40} className="w-6 h-6 sm:w-8 sm:h-8" />
+                    <Image src="/img/icon_ig.PNG" alt="Instagram" width={40} height={40} className="w-6 h-6 sm:w-8 sm:h-8" />
                   </a>
                 )}
               </div>
