@@ -34,7 +34,7 @@ export default function Footer() {
             className="hover:opacity-70 transition-opacity"
           >
             <Image
-              src="/img/icon_X.PNG"
+              src="/img/icon_x.PNG"
               alt="X (Twitter)"
               width={40}
               height={40}
@@ -48,7 +48,7 @@ export default function Footer() {
             className="hover:opacity-70 transition-opacity"
           >
             <Image
-              src="/img/icon_Instagram.PNG"
+              src="/img/icon_ig.PNG"
               alt="Instagram"
               width={40}
               height={40}
@@ -62,7 +62,7 @@ export default function Footer() {
             className="hover:opacity-70 transition-opacity"
           >
             <Image
-              src="/img/icon_YouTube.PNG"
+              src="/img/icon_yt.PNG"
               alt="YouTube"
               width={40}
               height={40}
