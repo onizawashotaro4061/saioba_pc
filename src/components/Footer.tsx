@@ -34,7 +34,7 @@ export default function Footer() {
             className="hover:opacity-70 transition-opacity"
           >
             <Image
-              src="/img/icon_x.PNG"
+              src="/img/icon_X.PNG"
               alt="X (Twitter)"
               width={40}
               height={40}
