@@ -1,7 +1,12 @@
 import Link from "next/link";
 import Slideshow from "@/components/Slideshow";
+import { newsData } from "@/data/newsData";
 
 export default function Home() {
+  // IDが大きい順に3つ取得
+  const latestNews = [...newsData]
+    .sort((a, b) => b.id - a.id)
+    .slice(0, 3);
   return (
     <>
       <div className="-mx-2 sm:-mx-4 lg:-mx-5">
@@ -32,44 +37,20 @@ export default function Home() {
             <hr className="border-gray-300" />
             <div className="h-4 sm:h-6"></div>
 
-            {/* News Item 11 */}
-            <p className="text-sm sm:text-base text-gray-600 mb-2 font-body-en">2025/05/18</p>
-            <div className="h-2"></div>
-            <Link
-              href="/news/11"
-              className="text-base sm:text-lg md:text-xl text-black hover:text-primary no-underline block mb-4 sm:mb-6 font-body-ja"
-            >
-              【お知らせ】
-              <br />
-              「さいおうばのワークショップ」開催決定
-            </Link>
-            <div className="h-3 sm:h-4"></div>
-
-            {/* News Item 10 */}
-            <p className="text-sm sm:text-base text-gray-600 mb-2 font-body-en">2025/1/23</p>
-            <div className="h-2"></div>
-            <Link
-              href="/news/9"
-              className="text-base sm:text-lg md:text-xl text-black hover:text-primary no-underline block mb-4 sm:mb-6 font-body-ja"
-            >
-              【ご報告】
-              <br />
-              2024年度明治大学創立者記念課外活動褒賞金採択のご報告
-            </Link>
-            <div className="h-3 sm:h-4"></div>
-
-            {/* News Item 9 */}
-            <p className="text-sm sm:text-base text-gray-600 mb-2 font-body-en">2025/01/21</p>
-            <div className="h-2"></div>
-            <Link
-              href="/news/10"
-              className="text-base sm:text-lg md:text-xl text-black hover:text-primary no-underline block mb-4 sm:mb-6 font-body-ja"
-            >
-              【メディア掲載情報】
-              <br />
-              明治大学文学部ニュースにて劇団員が紹介されました
-            </Link>
-            <div className="h-3 sm:h-4"></div>
+            {/* IDが大きい順に3つ表示 */}
+            {latestNews.map((news, index) => (
+              <div key={news.id}>
+                <p className="text-sm sm:text-base text-gray-600 mb-2 font-body-en">{news.date}</p>
+                <div className="h-2"></div>
+                <Link
+                  href={`/news/${news.id}`}
+                  className="text-base sm:text-lg md:text-xl text-black hover:text-primary no-underline block mb-4 sm:mb-6 font-body-ja"
+                >
+                  {news.title}
+                </Link>
+                {index < latestNews.length - 1 && <div className="h-3 sm:h-4"></div>}
+              </div>
+            ))}
 
             <div className="h-4 sm:h-6"></div>
             <Link

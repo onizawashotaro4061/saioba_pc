@@ -10,13 +10,6 @@ export interface NewsData {
 
 export const newsData: NewsData[] = [
   {
-    id: 12,
-    date: "2025/12/14",
-    title: "【お知らせ】\n劇団員加入のお知らせ",
-    content: "2025年12月より、新たに下記1名が劇団員として加入しました。\n\n馬詰 洋史（まづめ ひろふみ）……音響・舞台監督・会計・脚本\n\n第七回公演『変人、苦心、献身。』以来一緒に活動してきた彼を正式に迎え、劇団さいおうばは今後も精力的に活動してまいります。ご声援のほど、どうぞよろしくお願いいたします。",
-    images: ["/img/news_12.jpg"],
-  },
-  {
     id: 1,
     date: "2024/3/10",
     title: "【第9回全国学生演劇祭】\n劇団さいおうば、観客賞を受賞",
@@ -101,5 +94,12 @@ export const newsData: NewsData[] = [
     images: ["/img/news11.jpg"],
     link: "https://docs.google.com/forms/d/e/1FAIpQLSfMl4kWXQOFWuhOtUOBfDAT8TPPOzgo1vqDiuOH5c8sRj6QpA/viewform",
     linkText: "お申込み",
+  },
+  {
+    id: 12,
+    date: "2025/12/14",
+    title: "【お知らせ】\n劇団員加入のお知らせ",
+    content: "2025年12月より、新たに下記1名が劇団員として加入しました。\n\n馬詰 洋史（まづめ ひろふみ）……音響・舞台監督・会計・脚本\n\n第七回公演『変人、苦心、献身。』以来一緒に活動してきた彼を正式に迎え、劇団さいおうばは今後も精力的に活動してまいります。ご声援のほど、どうぞよろしくお願いいたします。",
+    images: ["/img/news_12.jpg"],
   },
 ];
