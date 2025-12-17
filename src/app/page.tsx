@@ -13,7 +13,7 @@ export default function Home() {
       <div className="history_link">
         <div className="bg-white py-6 sm:py-8 px-4 sm:px-6 rounded-lg mx-2 sm:mx-4 md:mx-auto max-w-4xl">
           <div className="text-center">
-            <p className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-gray-800 font-heading-en">Next Stage</p>
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-gray-800 font-heading-en">NEXTSTAGE</p>
             <div className="h-2 sm:h-4"></div>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-body-en">coming soon...</p>
           </div>
@@ -74,7 +74,7 @@ export default function Home() {
             <div className="h-4 sm:h-6"></div>
             <Link
               href="/news"
-              className="block text-center bg-primary text-white py-2 sm:py-3 px-4 sm:px-6 rounded-md hover:bg-opacity-80 transition no-underline text-sm sm:text-base md:text-lg max-w-xs mx-auto font-body-ja"
+              className="block text-center bg-sky-500 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-md hover:bg-opacity-80 transition no-underline text-sm sm:text-base md:text-lg max-w-xs mx-auto font-body-ja"
             >
               詳しくはこちら
             </Link>

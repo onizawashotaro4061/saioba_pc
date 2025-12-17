@@ -34,20 +34,26 @@ export default async function StagePage({ params }: { params: Promise<{ id: stri
   }
 
   return (
-    <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-8">
-      <div className="max-w-4xl mx-auto">
+    <div>
+      {/* トップ画像を画面幅いっぱいに（左右の余白なし） */}
+      <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-6 sm:mb-8">
         <Image
           src={stage.titleImage}
           alt={stage.title}
           width={1200}
           height={800}
-          className="w-full h-auto mb-6 sm:mb-8 rounded-lg shadow-lg"
+          className="w-full h-auto"
         />
-        <div className="bg-white p-6 sm:p-8 rounded-lg mb-6 sm:mb-8 shadow-lg">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 sm:mb-6 text-gray-800 font-subheading-ja">
+      </div>
+
+      {/* コンテンツエリア */}
+      <div className="container mx-auto px-4 sm:px-6 pb-6 sm:pb-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white p-6 sm:p-8 rounded-lg mb-6 sm:mb-8 shadow-lg">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 sm:mb-6 text-gray-800 font-subheading-ja whitespace-pre-line">
             {stage.title}
           </h1>
-          <p className="text-lg sm:text-xl font-bold mb-4 text-center text-gray-700 font-body-ja">{stage.subtitle}</p>
+          <p className="text-lg sm:text-xl font-bold mb-4 text-left text-gray-700 font-body-ja">{stage.subtitle}</p>
           <div className="h-4 sm:h-6"></div>
 
           <div className="flex items-center gap-4 mb-4">
@@ -124,13 +130,14 @@ export default async function StagePage({ params }: { params: Promise<{ id: stri
           )}
         </div>
 
-        <div className="text-center">
-          <Link
-            href="/history"
-            className="inline-block bg-sky-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-md hover:bg-opacity-80 transition text-sm sm:text-base md:text-lg font-body-en"
-          >
-            HISTORY に戻る
-          </Link>
+          <div className="text-center">
+            <Link
+              href="/history"
+              className="inline-block bg-sky-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-md hover:bg-opacity-80 transition text-sm sm:text-base md:text-lg font-body-en"
+            >
+              HISTORY に戻る
+            </Link>
+          </div>
         </div>
       </div>
     </div>

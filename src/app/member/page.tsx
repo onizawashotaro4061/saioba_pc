@@ -53,6 +53,18 @@ const members = [
     instagram: "https://www.instagram.com/3ura10_60?igsh=MTdsYmd6dzNtdXV5Ng==",
     description: "劇団さいおうば主宰。幼少期には落語を習うなど、演劇に関心を示す。高校進級の際、女子が多いと期待して演劇部に入部。同期に女子は0人だったものの、演劇の楽しさに気づき、大学入学後は同大学の演劇サークルである演劇研究部、活劇工房に入部し、明治大学シェイクスピアプロジェクトにも参加。活劇工房での活動中、寺腰と意気投合し劇団さいおうばを旗揚げする。劇団以外の参加作品: Ala'aum企画公演『ナイス・コントロール』二瀬コウイチ役、活劇工房2023年度新歓公演『第七夜』永島辰五郎役、明治大学シェイクスピアプロジェクト第20回公演『ハムレット』劇中王役、明治大学シェイクスピアプロジェクト『ロメオ・エンド・ジュリエット』カプレット役、劇団カナリ第5回公演『【intersection】；交錯点』畠山匠役（2024年）",
   },
+  {
+    name: "馬詰洋史",
+    nameReading: "まづめひろふみ",
+    role: "音響・舞台監督・会計・脚本",
+    birthdate: "2003/2/11",
+    hometown: "京都府",
+    hobbies: "音楽鑑賞・読書",
+    image: "/img/member_5.jpg",
+    twitter: "https://x.com/amami_masaharu",
+    instagram: "https://www.instagram.com/hirofumi1773?igsh=MXFwNmVpYTFsZWFicw==",
+    description: "中学時代に友人に誘われ演劇部に入り、そこで劇団さいおうば主宰の寺腰玄に出会う。神戸大学演劇研究会はちの巣座に入り、大学時代は関西にて活動。劇団さいおうばには、関西演劇祭2024『変人、苦心、献身。』で初参加。大学院進学と共に上京し、寺腰と再度演劇を始める。専門はスラヴ文学。劇団以外の参加作品: 洛星高校演劇部『とりでのむこう』堺役(2019年)、はちの巣座空きコマ公演短編集『Pot Luck』舞台監督及びうち一つ「後藤を待ちながら」(脚本:寺腰玄)演出(2022年)、劇団アンゴラ・ステーキ第2回公演『北極星より愛を込めて』改め『愛のポラリス』ダン役(2023年)、演劇集団エスキス第1回公演『対』舞台監督及びうち一つ「上告」脚本・野口役(2023年)、劇団,白薔薇第2回公演『カルテット』舞台監督(2023年)、演劇集団エスキス第2回企画『The Return of   』「社交場」脚本・出演(2023年)、劇団アンゴラ・ステーキ第5回公演『ザ・クリープショウ』音響(2024年)、餓鬼の断食vol.4.5『スイッチ』『対岸は、火事。』音響(2025年)",
+  },
 ];
 
 export default function Member() {
@@ -103,14 +115,40 @@ export default function Member() {
               </p>
             </div>
           </div>
-          {member.description && (
-            <>
-              <div className="h-6 sm:h-8 md:h-10"></div>
-              <div className="border-t border-gray-300 pt-4 sm:pt-6">
-                <p className="text-xs sm:text-sm md:text-base leading-relaxed text-gray-700 font-body-ja">{member.description}</p>
-              </div>
-            </>
-          )}
+          {member.description && (() => {
+            const parts = member.description.split('劇団以外の参加作品:');
+            const biography = parts[0]?.trim();
+            const works = parts[1]?.trim();
+
+            return (
+              <>
+                <div className="h-6 sm:h-8 md:h-10"></div>
+                <div className="border-t-2 border-gray-300 pt-6 sm:pt-8 space-y-6">
+                  {biography && (
+                    <div>
+                      <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-gray-800 font-subheading-ja">
+                        経歴
+                      </h3>
+                      <div className="bg-gray-50 p-4 sm:p-5 rounded-lg">
+                        <p className="text-xs sm:text-sm md:text-base leading-relaxed text-gray-700 font-body-ja">{biography}</p>
+                      </div>
+                    </div>
+                  )}
+
+                  {works && (
+                    <div>
+                      <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-gray-800 font-subheading-ja">
+                        劇団以外の参加作品
+                      </h3>
+                      <div className="bg-gray-50 p-4 sm:p-5 rounded-lg">
+                        <p className="text-xs sm:text-sm md:text-base leading-relaxed text-gray-700 font-body-ja">{works}</p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </>
+            );
+          })()}
         </div>
       ))}
     </div>
