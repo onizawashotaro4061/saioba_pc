@@ -280,6 +280,6 @@ export const stagesData: StageData[] = [
       { role: "チラシ・パンフデザイン", names: "高瀬悠（Mavolatory）" },
     ],
     venue: "インディペンデントシアターOji",
-    flyerImages: ["/img/fly_10_b1.jpg"],
+    flyerImages: ["/img/fly_10.jpg","/img/fly_10_b1.jpg"],
   },
 ];
