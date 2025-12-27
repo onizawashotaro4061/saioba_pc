@@ -25,42 +25,66 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   };
 }
 
+// 公演タイトルとstage IDのマッピング
+const stageLinks: { [key: string]: number } = {
+  'ごろさすセンセイ': 8,
+  'はにわのにわはわにのにわ': 10,
+  'アキスなヨシオ': 4,
+  'カミノコノミカ': 5,
+};
+
 // テキスト内のリンクを自動検出してハイパーリンク化する関数
-// マークダウン形式 [テキスト](URL) を使用
+// マークダウン形式 [テキスト](URL) を使用し、公演タイトルも自動リンク化
 function renderContentWithLinks(content: string) {
-  // [テキスト](URL)のパターンを検出する正規表現
-  const linkPattern = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+  // [テキスト](URL)のパターンを検出する正規表現（外部・内部リンク両方）
+  const linkPattern = /\[([^\]]+)\]\(([^\s)]+)\)/g;
   const parts: (string | JSX.Element)[] = [];
   let lastIndex = 0;
   let match;
 
   while ((match = linkPattern.exec(content)) !== null) {
-    // マッチ前のテキスト
+    // マッチ前のテキストを処理（公演タイトルをリンク化）
     if (match.index > lastIndex) {
-      parts.push(content.substring(lastIndex, match.index));
+      const textBeforeLink = content.substring(lastIndex, match.index);
+      parts.push(...convertStageTitlesToLinks(textBeforeLink, parts.length));
     }
 
     // リンク部分
     const linkText = match[1];
     const url = match[2];
-    parts.push(
-      <a
-        key={`link-${match.index}`}
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 hover:text-blue-800 underline"
-      >
-        {linkText}
-      </a>
-    );
+    const isExternal = url.startsWith('http://') || url.startsWith('https://');
+
+    if (isExternal) {
+      parts.push(
+        <a
+          key={`link-${match.index}`}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:text-blue-800 underline"
+        >
+          {linkText}
+        </a>
+      );
+    } else {
+      parts.push(
+        <Link
+          key={`link-${match.index}`}
+          href={url}
+          className="text-blue-600 hover:text-blue-800 underline"
+        >
+          {linkText}
+        </Link>
+      );
+    }
 
     lastIndex = linkPattern.lastIndex;
   }
 
-  // 残りのテキスト
+  // 残りのテキストを処理（公演タイトルをリンク化）
   if (lastIndex < content.length) {
-    parts.push(content.substring(lastIndex));
+    const remainingText = content.substring(lastIndex);
+    parts.push(...convertStageTitlesToLinks(remainingText, parts.length));
   }
 
   // parts配列をReact要素として返す
@@ -75,6 +99,52 @@ function renderContentWithLinks(content: string) {
     }
     return part;
   });
+}
+
+// テキスト内の公演タイトルをリンクに変換する関数
+function convertStageTitlesToLinks(text: string, keyOffset: number): (string | JSX.Element)[] {
+  const parts: (string | JSX.Element)[] = [];
+  let remainingText = text;
+  let currentOffset = 0;
+
+  // 公演タイトルのパターンを構築（『タイトル』形式）
+  const titlePattern = /『([^』]+)』/g;
+  let match;
+
+  while ((match = titlePattern.exec(text)) !== null) {
+    const fullMatch = match[0]; // 『タイトル』
+    const title = match[1]; // タイトル
+
+    // マッチ前のテキスト
+    if (match.index > currentOffset) {
+      parts.push(text.substring(currentOffset, match.index));
+    }
+
+    // タイトルがマッピングに存在する場合はリンク化
+    if (stageLinks[title]) {
+      parts.push(
+        <Link
+          key={`stage-link-${keyOffset}-${match.index}`}
+          href={`/stage/${stageLinks[title]}`}
+          className="text-blue-600 hover:text-blue-800 underline"
+        >
+          {fullMatch}
+        </Link>
+      );
+    } else {
+      // マッピングにない場合はそのまま表示
+      parts.push(fullMatch);
+    }
+
+    currentOffset = match.index + fullMatch.length;
+  }
+
+  // 残りのテキスト
+  if (currentOffset < text.length) {
+    parts.push(text.substring(currentOffset));
+  }
+
+  return parts.length > 0 ? parts : [text];
 }
 
 export default async function NewsPage({ params }: { params: Promise<{ id: string }> }) {
