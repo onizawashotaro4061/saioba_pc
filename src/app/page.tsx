@@ -23,7 +23,7 @@ export default function Home() {
             <div className="h-4 sm:h-6"></div>
             <div className="max-w-2xl mx-auto">
               <Image
-                src="/img/thumbnail_11.png"
+                src="/img/thumbnail_11_2.png"
                 alt="劇団さいおうば第十一回公演『独裁者モロン』"
                 width={800}
                 height={450}
@@ -33,7 +33,34 @@ export default function Home() {
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3 sm:mb-4 font-body-ja">
               劇団さいおうば第十一回公演<br />『独裁者モロン』
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 font-body-en">Coming Soon……</p>
+            <div className="text-base sm:text-lg text-gray-700 font-body-ja">
+              <p className="font-semibold text-center mb-3">@シアター711</p>
+              <div className="space-y-2 flex flex-col items-center">
+                <div className="flex gap-8 w-full max-w-xs">
+                  <span className="w-32">3月13日(金)</span>
+                  <span>19:00</span>
+                </div>
+                <div className="flex gap-8 w-full max-w-xs">
+                  <span className="w-32">3月14日(土)</span>
+                  <span>13:00／18:00</span>
+                </div>
+                <div className="flex gap-8 w-full max-w-xs">
+                  <span className="w-32">3月15日(日)</span>
+                  <span>13:00／18:00</span>
+                </div>
+                <div className="flex gap-8 w-full max-w-xs">
+                  <span className="w-32">3月16日(月)</span>
+                  <span>13:00</span>
+                </div>
+              </div>
+            </div>
+            <div className="h-4 sm:h-6"></div>
+            <Link
+              href="/nextstage"
+              className="block text-center bg-sky-500 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-md hover:bg-opacity-80 transition no-underline text-sm sm:text-base md:text-lg max-w-xs mx-auto font-body-ja"
+            >
+              詳しくはこちら
+            </Link>
           </div>
         </div>
       </div>

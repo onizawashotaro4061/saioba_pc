@@ -14,6 +14,7 @@ export interface StageData {
   }[];
   venue: string;
   flyerImages?: string[];
+  thumbnailImages?: string[];
 }
 
 export const stagesData: StageData[] = [
@@ -281,5 +282,43 @@ export const stagesData: StageData[] = [
     ],
     venue: "インディペンデントシアターOji",
     flyerImages: ["/img/fly_10.jpg","/img/fly_10_b1.jpg"],
+  },
+  {
+    id: 11,
+    title: "第十一回公演\n『独裁者モロン』",
+    subtitle: "───ある日、名もない恐怖に名前がついた。",
+    titleImage: "/img/title_11.png",
+    youtubeUrl: "",
+    synopsis: "これはいつかの未来の話。\n偉大なる大東天公国では、すべての創作が国によって管理されていた。\n国家の意に沿って自分を殺し、「無害」な小説を書き続ける官僚たち。\n\nしかしある日、彼らの前に「有害」な冒険小説が現れる。\nその危険さを知りつつも、作品の面白さに惹かれていく官僚たち。\nひとりまた一人と小説の執筆に加わり、\nすべてが変わってゆくかと思われたが───\n\n自由と管理の狭間で慌てふためく、\n1984年プラス42年のディストピア・コメディ。",
+    introduction: "",
+    director: "寺腰玄（劇団さいおうば）",
+    cast: [
+      "新井愛海（劇団ところば）",
+      "帯津光歩",
+      "金子レイチェル奈々",
+      "紙谷宥志（劇団湾岸サイクル）",
+      "小林アスマ",
+      "三浦那由多（劇団さいおうば）",
+      "村山桃圭（アジアン・モンスターズ）",
+      "本山裕也"
+    ],
+    staff: [
+      { role: "演出助手", names: "谷口玄" },
+      { role: "舞台監督", names: "馬詰洋史（劇団さいおうば）" },
+      { role: "舞台監督補佐", names: "石田由衣（劇団さいおうば）" },
+      { role: "制作", names: "土田一人（劇団さいおうば）、石田由衣、宮嵜明理" },
+      { role: "照明", names: "山口夏寧、奥津力哉、汐恩輝" },
+      { role: "音響", names: "馬詰洋史、大野詩央、小林アスマ" },
+      { role: "舞台美術", names: "横山奏、高瀬悠（Mavolatory）、木下詩月" },
+      { role: "衣装・小道具", names: "末原一乃、左座龍成" },
+      { role: "映像スチール", names: "野口みさき" },
+      { role: "グッズ制作", names: "土田一人、寺腰玄、田口太陽、荒尾愛美" },
+      { role: "宣伝美術", names: "小林未和（ターリーズ）" },
+      { role: "会計", names: "馬詰洋史" },
+      { role: "協力", names: "劇団活劇工房" },
+    ],
+    venue: "本多劇場グループ シアター711",
+    flyerImages: ["/img/fly_11_1.jpg", "/img/fly_11_2.jpg"],
+    thumbnailImages: ["/img/thumbnail_11_2.png"],
   },
 ];
