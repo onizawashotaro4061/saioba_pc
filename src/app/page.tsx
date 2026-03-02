@@ -42,11 +42,11 @@ export default function Home() {
                 </div>
                 <div className="flex gap-8 w-full max-w-xs">
                   <span className="w-32">3月14日(土)</span>
-                  <span>13:00／18:00</span>
+                  <span>13:00/18:00</span>
                 </div>
                 <div className="flex gap-8 w-full max-w-xs">
                   <span className="w-32">3月15日(日)</span>
-                  <span>13:00／18:00</span>
+                  <span>13:00/18:00</span>
                 </div>
                 <div className="flex gap-8 w-full max-w-xs">
                   <span className="w-32">3月16日(月)</span>
@@ -57,6 +57,53 @@ export default function Home() {
             <div className="h-4 sm:h-6"></div>
             <Link
               href="/nextstage"
+              className="block text-center bg-sky-500 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-md hover:bg-opacity-80 transition no-underline text-sm sm:text-base md:text-lg max-w-xs mx-auto font-body-ja"
+            >
+              詳しくはこちら
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="h-4 sm:h-6 md:h-8"></div>
+
+      <div className="history_link">
+        <div className="bg-white py-6 sm:py-8 px-4 sm:px-6 rounded-lg mx-2 sm:mx-4 md:mx-auto max-w-4xl">
+          <div className="text-center">
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-gray-800 font-heading-en">NEXTSTAGE</p>
+            <div className="h-4 sm:h-6"></div>
+            <div className="max-w-2xl mx-auto">
+              <Image
+                src="/img/thumbnail_BESTBURN.jpg"
+                alt="ターリーズフェスティバル2026『THE BEST BURN‼︎』参加作品『私はイスを撫でたくない』"
+                width={800}
+                height={450}
+                className="w-full h-auto rounded-lg shadow-md mb-4 sm:mb-6"
+              />
+            </div>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3 sm:mb-4 font-body-ja">
+              ターリーズフェスティバル2026<br />『THE BEST BURN‼︎』参加作品<br />『私はイスを撫でたくない』
+            </h2>
+            <div className="text-base sm:text-lg text-gray-700 font-body-ja">
+              <p className="font-semibold text-center mb-3">@小劇場楽園</p>
+              <div className="space-y-2 flex flex-col items-center">
+                <div className="flex gap-8 w-full max-w-xs">
+                  <span className="w-32">3月27日(金)</span>
+                  <span>19:00</span>
+                </div>
+                <div className="flex gap-8 w-full max-w-xs">
+                  <span className="w-32">3月28日(土)</span>
+                  <span>12:00/15:30/19:00</span>
+                </div>
+                <div className="flex gap-8 w-full max-w-xs">
+                  <span className="w-32">3月29日(日)</span>
+                  <span>12:30/16:00</span>
+                </div>
+              </div>
+            </div>
+            <div className="h-4 sm:h-6"></div>
+            <Link
+              href="/nextstage2"
               className="block text-center bg-sky-500 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-md hover:bg-opacity-80 transition no-underline text-sm sm:text-base md:text-lg max-w-xs mx-auto font-body-ja"
             >
               詳しくはこちら

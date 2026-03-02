@@ -111,4 +111,13 @@ export const newsData: NewsData[] = [
     link: "https://youtube.com/@gekidansaiouba",
     linkText: "劇団さいおうば公式YouTubeチャンネル",
   },
+  {
+    id: 14,
+    date: "2026/02/25",
+    title: "【事務所所属情報】寺腰玄が株式会社ファブコミュニケーションズに所属しました",
+    content: "この度、劇団さいおうば主宰・寺腰玄が株式会社ファブコミュニケーションズに脚本家・演出家として所属いたしました。\n引き続き、劇団さいおうば並びに寺腰玄をよろしくお願いいたします。",
+    images: ["/img/news_14.jpg"],
+    link: "https://www.fabnet.co.jp/members/terakoshi",
+    linkText: "",
+  },
 ];

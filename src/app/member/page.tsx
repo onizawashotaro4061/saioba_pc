@@ -36,22 +36,11 @@ const members = [
     birthdate: "2003/3/1",
     hometown: "京都府",
     hobbies: "ミニチュアコレクション・落語鑑賞",
-    image: "/img/member_3.jpg",
+    image: "/img/member_3_1.jpg",
     twitter: "https://twitter.com/katsuragi_gekit",
     instagram: "https://www.instagram.com/gen_terakoshi",
+    homepage: "https://www.fabnet.co.jp/members/terakoshi",
     description: "劇団さいおうば主宰。幼少期より演劇に興味を持ち、高校時代に脚本を担当した『とりでのむこう』('19)が第66回全国高等学校演劇大会に進出したことをきっかけに演劇の道へ進むことを決意。高校3年生の夏、戯曲ゼミにてMONO主宰の土田英生氏に学ぶ。大学入学以降も劇団活劇工房で脚本を執筆し続け、2023年には劇団さいおうばを旗揚げした。活劇工房時代に執筆した戯曲『独裁者モロン』('22)は第6回田畑実戯曲賞で最終候補に選出。東京学生演劇祭のため執筆した戯曲『アキスなヨシオ』('23)は佐藤佐吉賞2023優秀脚本賞を受賞。ほか、関西演劇祭2024にて上演された『変人、苦心、献身。』は脚本賞を受賞した。劇団以外の参加作品: 洛星高校演劇部『とりでのむこう』脚本・出演(2019年)、劇団活劇工房2022年度夏公演『甘い匂いが』脚本・演出(2022年)、劇団活劇工房2022年度新人公演『独裁者モロン』脚本・演出(2022年)、劇団活劇工房2023年度新歓公演『第七夜』脚本・演出(2023年)、劇団活劇工房2024年度新人公演『聴診器』制作(2024年)、劇団イン・ノート第10回本公演『海賊の時間2024』演出助手（2024年）",
-  },
-  {
-    name: "三浦那由多",
-    nameReading: "みうらなゆた",
-    role: "主宰・役者・会計",
-    birthdate: "2002/9/3",
-    hometown: "東京都",
-    hobbies: "ゲーム・漫画鑑賞",
-    image: "/img/member_4.jpg",
-    twitter: "https://x.com/nayuta985687545?s=21&t=KoSH_qJqfW9qy3GFVsiPJg",
-    instagram: "https://www.instagram.com/3ura10_60?igsh=MTdsYmd6dzNtdXV5Ng==",
-    description: "劇団さいおうば主宰。幼少期には落語を習うなど、演劇に関心を示す。高校進級の際、女子が多いと期待して演劇部に入部。同期に女子は0人だったものの、演劇の楽しさに気づき、大学入学後は同大学の演劇サークルである演劇研究部、活劇工房に入部し、明治大学シェイクスピアプロジェクトにも参加。活劇工房での活動中、寺腰と意気投合し劇団さいおうばを旗揚げする。劇団以外の参加作品: Ala'aum企画公演『ナイス・コントロール』二瀬コウイチ役、活劇工房2023年度新歓公演『第七夜』永島辰五郎役、明治大学シェイクスピアプロジェクト第20回公演『ハムレット』劇中王役、明治大学シェイクスピアプロジェクト『ロメオ・エンド・ジュリエット』カプレット役、劇団カナリ第5回公演『【intersection】；交錯点』畠山匠役（2024年）",
   },
   {
     name: "馬詰洋史",
@@ -64,6 +53,18 @@ const members = [
     twitter: "https://x.com/amami_masaharu",
     instagram: "https://www.instagram.com/hirofumi1773?igsh=MXFwNmVpYTFsZWFicw==",
     description: "中学時代に友人に誘われ演劇部に入り、そこで劇団さいおうば主宰の寺腰玄に出会う。神戸大学演劇研究会はちの巣座に入り、大学時代は関西にて活動。劇団さいおうばには、関西演劇祭2024『変人、苦心、献身。』で初参加。大学院進学と共に上京し、寺腰と再度演劇を始める。専門はスラヴ文学。劇団以外の参加作品: 洛星高校演劇部『とりでのむこう』堺役(2019年)、はちの巣座空きコマ公演短編集『Pot Luck』舞台監督及びうち一つ「後藤を待ちながら」(脚本:寺腰玄)演出(2022年)、劇団アンゴラ・ステーキ第2回公演『北極星より愛を込めて』改め『愛のポラリス』ダン役(2023年)、演劇集団エスキス第1回公演『対』舞台監督及びうち一つ「上告」脚本・野口役(2023年)、劇団,白薔薇第2回公演『カルテット』舞台監督(2023年)、演劇集団エスキス第2回企画『The Return of　 』「社交場」脚本・出演(2023年)、劇団アンゴラ・ステーキ第5回公演『ザ・クリープショウ』音響(2024年)、餓鬼の断食vol.4.5『スイッチ』『対岸は、火事。』音響(2025年)",
+  },
+  {
+    name: "三浦那由多",
+    nameReading: "みうらなゆた",
+    role: "主宰・役者・会計",
+    birthdate: "2002/9/3",
+    hometown: "東京都",
+    hobbies: "ゲーム・漫画鑑賞",
+    image: "/img/member_4.jpg",
+    twitter: "https://x.com/nayuta985687545?s=21&t=KoSH_qJqfW9qy3GFVsiPJg",
+    instagram: "https://www.instagram.com/3ura10_60?igsh=MTdsYmd6dzNtdXV5Ng==",
+    description: "劇団さいおうば主宰。幼少期には落語を習うなど、演劇に関心を示す。高校進級の際、女子が多いと期待して演劇部に入部。同期に女子は0人だったものの、演劇の楽しさに気づき、大学入学後は同大学の演劇サークルである演劇研究部、活劇工房に入部し、明治大学シェイクスピアプロジェクトにも参加。活劇工房での活動中、寺腰と意気投合し劇団さいおうばを旗揚げする。劇団以外の参加作品: Ala'aum企画公演『ナイス・コントロール』二瀬コウイチ役、活劇工房2023年度新歓公演『第七夜』永島辰五郎役、明治大学シェイクスピアプロジェクト第20回公演『ハムレット』劇中王役、明治大学シェイクスピアプロジェクト『ロメオ・エンド・ジュリエット』カプレット役、劇団カナリ第5回公演『【intersection】；交錯点』畠山匠役（2024年）",
   },
 ];
 
@@ -99,6 +100,11 @@ export default function Member() {
                 {member.instagram && (
                   <a href={member.instagram} target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
                     <Image src="/img/icon_ig.PNG" alt="Instagram" width={40} height={40} className="w-6 h-6 sm:w-8 sm:h-8" />
+                  </a>
+                )}
+                {member.homepage && (
+                  <a href={member.homepage} target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+                    <Image src="/img/icon_hp.PNG" alt="homepage" width={40} height={40} className="w-6 h-6 sm:w-8 sm:h-8" />
                   </a>
                 )}
               </div>
