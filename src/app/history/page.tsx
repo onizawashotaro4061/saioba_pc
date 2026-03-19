@@ -77,6 +77,13 @@ const stages = [
     venue: "インディペンデントシアターOji",
     image: "/img/thumbnail_10.jpg",
   },
+  {
+    id: 11,
+    date: "2026.3.13.～2026.3.16.",
+    title: "第十一回公演『独裁者モロン』 ",
+    venue: "シアター711",
+    image: "/img/thumbnail_11_2.png",
+  },
 ];
 
 export default function History() {
