@@ -12,7 +12,7 @@ export default function Header() {
   };
 
   const navItems = [
-    { href: "/nextstage", label: "NEXTSTAGE" },
+    // { href: "/nextstage", label: "NEXTSTAGE" },
     { href: "/news", label: "NEWS" },
     { href: "/about", label: "ABOUT" },
     { href: "/member", label: "MEMBER" },
