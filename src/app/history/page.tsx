@@ -84,6 +84,13 @@ const stages = [
     venue: "シアター711",
     image: "/img/thumbnail_11_2.png",
   },
+  {
+    id: 12,
+    date: "2026.3.27.～2026.3.29.",
+    title: "ターリーズフェスティバル2026参加作品『私はイスを撫でたくない』",
+    venue: "小劇場楽園",
+    image: "/img/thumbnail_BESTBURN.jpg",
+  },
 ];
 
 export default function History() {

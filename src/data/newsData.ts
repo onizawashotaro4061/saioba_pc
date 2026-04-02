@@ -120,4 +120,13 @@ export const newsData: NewsData[] = [
     link: "https://www.fabnet.co.jp/members/terakoshi",
     linkText: "",
   },
+  {
+    id: 15,
+    date: "2026/04/01",
+    title: "【お知らせ】劇団員加入のお知らせ",
+    content: "2026年4月より、劇団さいおうばは以下の三名を新たに劇団員として迎える運びとなりました。\n\n金子レイチェル奈々（かねこれいちぇるなな）……役者・照明・演出助手\n小林アスマ（こばやしあすま）……役者、音響、作曲、演出助手\n本山裕也（もとやまゆうや）……役者\n\n劇団さいおうばは今後も精力的に活動してまいります。\nご声援のほど、どうぞよろしくお願いいたします。",
+    images: ["/img/news_15.png"],
+    link: "/member",
+    linkText: "",
+  },
 ];

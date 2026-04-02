@@ -16,7 +16,7 @@ export default function Home() {
       <div className="h-2 sm:h-4 md:h-6 lg:h-8"></div>
 
       {/* NextStage Section */}
-      <div className="history_link">
+      {/* <div className="history_link">
         <div className="bg-white py-6 sm:py-8 px-4 sm:px-6 rounded-lg mx-2 sm:mx-4 md:mx-auto max-w-4xl">
           <div className="text-center">
             <p className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-gray-800 font-heading-en">NEXTSTAGE</p>
@@ -57,6 +57,22 @@ export default function Home() {
             >
               詳しくはこちら
             </Link>
+          </div>
+        </div>
+      </div> */}
+
+      {/* coming soon */}
+      <div className="history_link">
+        <div className="bg-white py-6 sm:py-8 px-4 sm:px-6 rounded-lg mx-2 sm:mx-4 md:mx-auto max-w-4xl">
+          <div className="text-center">
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-gray-800 font-heading-en">NEXTSTAGE</p>
+            
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3 sm:mb-4 font-body-ja">
+              COMING SOON...
+            </h2>
+            
+            
+            
           </div>
         </div>
       </div>
