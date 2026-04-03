@@ -99,6 +99,21 @@ export default async function StagePage({ params }: { params: Promise<{ id: stri
           </div>
 
           <div className="h-2 sm:h-3"></div>
+          {stage.friendlyCast && stage.friendlyCast.length > 0 && (<>
+    <div className="h-2 sm:h-3"></div>
+    <div className="text-lg sm:text-xl font-bold mb-2 text-gray-800 font-subheading-ja">
+        【友情出演】
+    </div>
+    <div className="h-2 sm:h-3"></div>
+    <div className="text-sm sm:text-base md:text-lg mb-4 text-gray-700 font-body-ja">
+      {stage.friendlyCast.map((actor, index) => (
+        <div key={index}>{actor}</div>
+      ))}
+    </div>
+  </>
+)}
+
+          <div className="h-2 sm:h-3"></div>
           <div className="text-lg sm:text-xl font-bold mb-2 text-gray-800 font-subheading-ja">【スタッフ】</div>
           {stage.staff.map((staff, index) => (
             <div key={index} className="mb-2 text-sm sm:text-base md:text-lg text-gray-700 font-body-ja">
