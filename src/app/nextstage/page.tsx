@@ -1,8 +1,8 @@
-'use client';
 
 import Image from "next/image";
 import Link from "next/link";
 import { stagesData } from "@/data/stagesData";
+import TicketLink from "@/components/TicketLink";
 
 export const metadata = {
   title: "NextStage | 劇団さいおうば公式サイト",
@@ -91,14 +91,6 @@ export default function NextStage() {
             <div className="h-2 sm:h-3"></div>
             <div className="text-lg sm:text-xl font-bold mb-2 text-gray-800 font-subheading-ja">【公演日程】</div>
             <div className="text-sm sm:text-base md:text-lg mb-3 text-gray-700 font-body-ja">
-              {/*
-                スケジュールはデータ側に持たせるか、ここで個別に書き換えるか
-                どちらでも構いません。現在ステージ12用の情報は存在しないため
-                旧来の静的コードが残っていますが、必要に応じて
-                stagesData に `schedule` プロパティを追加し、こちらで
-                {latestStage.schedule?.map(...)} のように動的表示するように
-                変更してください。
-              */}
               <div className="space-y-2">
                 <div className="flex gap-8">
                   <span className="w-32">3月27日(金)</span>
@@ -168,23 +160,7 @@ export default function NextStage() {
             {/* 予約リンク */}
             <div className="h-4 sm:h-6"></div>
             <div className="text-center">
-  <Link
-    href="https://ticket.corich.jp/apply/441041/333/"
-    target="_blank"
-    rel="noopener noreferrer"
-    onClick={() => {
-      // ブラウザ環境かつgtagが存在する場合のみ実行
-      if (typeof window !== "undefined" && window.gtag) {
-        window.gtag("event", "ticket_click", {
-          event_category: "conversion",
-          event_label: "CoRich予約リンク",
-        });
-      }
-    }}
-    className="inline-block bg-sky-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-md hover:bg-opacity-80 transition text-sm sm:text-base md:text-lg font-body-en"
-  >
-    ご予約はこちらから
-  </Link>
+              <TicketLink />
 </div>
           </div>
         </div>
