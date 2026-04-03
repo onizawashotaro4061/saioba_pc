@@ -33,7 +33,7 @@ const members = [
   {
     name: "小林アスマ",
     nameReading: "こばやしあすま",
-    role: "役者、音響、作曲、演出助手",
+    role: "役者・音響・作曲・演出助手",
     birthdate: "2003/6/12",
     hometown: "東京都",
     hobbies: "博物館巡り・ドライブ・化石採集",
