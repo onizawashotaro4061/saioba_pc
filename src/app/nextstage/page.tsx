@@ -166,15 +166,24 @@ export default function NextStage() {
             {/* 予約リンク */}
             <div className="h-4 sm:h-6"></div>
             <div className="text-center">
-              <Link
-                href="https://ticket.corich.jp/apply/441041/333/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-sky-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-md hover:bg-opacity-80 transition text-sm sm:text-base md:text-lg font-body-en"
-              >
-                ご予約はこちらから
-              </Link>
-            </div>
+  <Link
+    href="https://ticket.corich.jp/apply/441041/333/"
+    target="_blank"
+    rel="noopener noreferrer"
+    onClick={() => {
+      // ブラウザ環境かつgtagが存在する場合のみ実行
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "ticket_click", {
+          event_category: "conversion",
+          event_label: "CoRich予約リンク",
+        });
+      }
+    }}
+    className="inline-block bg-sky-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-md hover:bg-opacity-80 transition text-sm sm:text-base md:text-lg font-body-en"
+  >
+    ご予約はこちらから
+  </Link>
+</div>
           </div>
         </div>
       </div>
