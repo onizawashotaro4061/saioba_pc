@@ -35,15 +35,23 @@ export default function Home() {
             </h2>
             <div className="text-base sm:text-lg text-gray-700 font-body-ja">
               <p className="font-semibold text-center mb-3">＠下北沢スターダスト</p>
-              <div className="space-y-2 flex flex-col items-center">
-                <div className="flex gap-8 w-full max-w-xs">
-                  <span className="w-32">7月11日(土)</span>
-                  <span>18:00</span>
-                </div>
-                <div className="flex gap-8 w-full max-w-xs">
-                  <span className="w-32">7月12日(日)</span>
-                  <span>13:00/16:00/19:00</span>
-                </div>
+              {/* スマホ: 3段表示 */}
+              <div className="grid grid-cols-2 gap-x-6 text-left w-fit mx-auto sm:hidden">
+                <span>7月11日(土)</span>
+                <span>18:00</span>
+                <span>7月12日(日)</span>
+                <span>13:00</span>
+                <span></span>
+                <span>16:00</span>
+                <span></span>
+                <span>19:00</span>
+              </div>
+              {/* PC: 1行表示 */}
+              <div className="hidden sm:grid grid-cols-2 gap-x-6 text-left w-fit mx-auto">
+                <span>7月11日(土)</span>
+                <span>18:00</span>
+                <span>7月12日(日)</span>
+                <span>13:00/16:00/19:00</span>
               </div>
             </div>
             <div className="h-4 sm:h-6"></div>

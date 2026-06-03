@@ -103,15 +103,23 @@ export default function NextStage() {
             <div className="h-2 sm:h-3"></div>
             <div className="text-lg sm:text-xl font-bold mb-2 text-gray-800 font-subheading-ja">【公演日程】</div>
             <div className="text-sm sm:text-base md:text-lg mb-3 text-gray-700 font-body-ja">
-              <div className="space-y-2">
-                <div className="flex gap-2">
-                  <span className="w-32">7月11日(土)</span>
-                  <span>18:00</span>
-                </div>
-                <div className="flex gap-2">
-                  <span className="w-32">7月12日(日)</span>
-                  <span>13:00/16:00/19:00</span>
-                </div>
+              {/* スマホ: 3段表示 */}
+              <div className="grid grid-cols-2 gap-x-6 text-left w-fit sm:hidden">
+                <span>7月11日(土)</span>
+                <span>18:00</span>
+                <span>7月12日(日)</span>
+                <span>13:00</span>
+                <span></span>
+                <span>16:00</span>
+                <span></span>
+                <span>19:00</span>
+              </div>
+              {/* PC: 1行表示 */}
+              <div className="hidden sm:grid grid-cols-2 gap-x-6 text-left w-fit">
+                <span>7月11日(土)</span>
+                <span>18:00</span>
+                <span>7月12日(日)</span>
+                <span>13:00/16:00/19:00</span>
               </div>
               <div className="h-3"></div>
               <p className="text-xs sm:text-sm text-gray-600">※全4ステージ</p>
