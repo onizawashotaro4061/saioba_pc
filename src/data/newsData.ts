@@ -129,4 +129,13 @@ export const newsData: NewsData[] = [
     link: "/member",
     linkText: "",
   },
+  {
+    id: 16,
+    date: "2026/05/07",
+    title: "【お知らせ】映画『フクイラプトル』に劇団員が参加",
+    content: "横川寛人監督の『映画フクイラプトル』に、主宰・寺腰玄が脚本、劇団員・小林アスマが脚本協力で参加しております。\n映画は2026年末公開予定です。",
+    images: ["/img/news_16.jpg"],
+    link: "http://3yfilm.co.jp/fukuiraptor",
+    linkText: "詳細はこちらから",
+  },
 ];

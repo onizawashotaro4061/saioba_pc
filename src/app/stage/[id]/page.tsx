@@ -86,8 +86,20 @@ export default async function StagePage({ params }: { params: Promise<{ id: stri
           <p className="text-sm sm:text-base md:text-lg mb-6 leading-relaxed text-gray-700 font-body-ja">{stage.introduction}</p>
 
           <div className="h-6 sm:h-8 md:h-10"></div>
-          <div className="text-lg sm:text-xl font-bold mb-2 text-gray-800 font-subheading-ja">【作・演出】</div>
-          <div className="text-sm sm:text-base md:text-lg mb-4 text-gray-700 font-body-ja">{stage.director}</div>
+          {stage.playwright ? (
+            <>
+              <div className="text-lg sm:text-xl font-bold mb-2 text-gray-800 font-subheading-ja">【脚本】</div>
+              <div className="text-sm sm:text-base md:text-lg mb-4 text-gray-700 font-body-ja">{stage.playwright}</div>
+              <div className="h-2 sm:h-3"></div>
+              <div className="text-lg sm:text-xl font-bold mb-2 text-gray-800 font-subheading-ja">【演出】</div>
+              <div className="text-sm sm:text-base md:text-lg mb-4 text-gray-700 font-body-ja">{stage.director}</div>
+            </>
+          ) : (
+            <>
+              <div className="text-lg sm:text-xl font-bold mb-2 text-gray-800 font-subheading-ja">【作・演出】</div>
+              <div className="text-sm sm:text-base md:text-lg mb-4 text-gray-700 font-body-ja">{stage.director}</div>
+            </>
+          )}
 
           <div className="h-2 sm:h-3"></div>
           <div className="text-lg sm:text-xl font-bold mb-2 text-gray-800 font-subheading-ja">【出演】</div>

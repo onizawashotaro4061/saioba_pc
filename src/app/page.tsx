@@ -16,38 +16,42 @@ export default function Home() {
       <div className="h-2 sm:h-4 md:h-6 lg:h-8"></div>
 
       {/* NextStage Section */}
-      {/* <div className="history_link">
+      <div className="history_link">
         <div className="bg-white py-6 sm:py-8 px-4 sm:px-6 rounded-lg mx-2 sm:mx-4 md:mx-auto max-w-4xl">
           <div className="text-center">
             <p className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-gray-800 font-heading-en">NEXTSTAGE</p>
             <div className="h-4 sm:h-6"></div>
             <div className="max-w-2xl mx-auto">
               <Image
-                src="/img/thumbnail_BESTBURN.jpg"
-                alt="ターリーズフェスティバル2026『THE BEST BURN‼︎』参加作品『私はイスを撫でたくない』"
+                src="/img/thum_konto_1.jpg"
+                alt="劇団さいおうば第一回コント公演『白馬非馬』"
                 width={800}
                 height={450}
                 className="w-full h-auto rounded-lg shadow-md mb-4 sm:mb-6"
               />
             </div>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3 sm:mb-4 font-body-ja">
-              ターリーズフェスティバル2026<br />『THE BEST BURN‼︎』参加作品<br />『私はイスを撫でたくない』
+              劇団さいおうば第一回コント公演<br />『白馬非馬』
             </h2>
             <div className="text-base sm:text-lg text-gray-700 font-body-ja">
-              <p className="font-semibold text-center mb-3">@小劇場楽園</p>
-              <div className="space-y-2 flex flex-col items-center">
-                <div className="flex gap-8 w-full max-w-xs">
-                  <span className="w-32">3月27日(金)</span>
-                  <span>19:00</span>
-                </div>
-                <div className="flex gap-8 w-full max-w-xs">
-                  <span className="w-32">3月28日(土)</span>
-                  <span>12:00/15:30/19:00</span>
-                </div>
-                <div className="flex gap-8 w-full max-w-xs">
-                  <span className="w-32">3月29日(日)</span>
-                  <span>12:30/16:00</span>
-                </div>
+              <p className="font-semibold text-center mb-3">＠下北沢スターダスト</p>
+              {/* スマホ: 3段表示 */}
+              <div className="grid grid-cols-2 gap-x-6 text-left w-fit mx-auto sm:hidden">
+                <span>7月11日(土)</span>
+                <span>18:00</span>
+                <span>7月12日(日)</span>
+                <span>13:00</span>
+                <span></span>
+                <span>16:00</span>
+                <span></span>
+                <span>19:00</span>
+              </div>
+              {/* PC: 1行表示 */}
+              <div className="hidden sm:grid grid-cols-2 gap-x-6 text-left w-fit mx-auto">
+                <span>7月11日(土)</span>
+                <span>18:00</span>
+                <span>7月12日(日)</span>
+                <span>13:00/16:00/19:00</span>
               </div>
             </div>
             <div className="h-4 sm:h-6"></div>
@@ -59,10 +63,10 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* coming soon */}
-      <div className="history_link">
+      {/* <div className="history_link">
         <div className="bg-white py-6 sm:py-8 px-4 sm:px-6 rounded-lg mx-2 sm:mx-4 md:mx-auto max-w-4xl">
           <div className="text-center">
             <p className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-gray-800 font-heading-en">NEXTSTAGE</p>
@@ -75,7 +79,7 @@ export default function Home() {
             
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="h-4 sm:h-6 md:h-8"></div>
 

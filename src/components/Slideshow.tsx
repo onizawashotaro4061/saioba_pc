@@ -4,12 +4,14 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const slides = [
-  "/img/top.jpg",
-  "/img/top1.png",
-  "/img/top2.png",
-  "/img/top3.png",
-  "/img/top4.png",
-  "/img/top5.png",
+  "/img/top_1.jpg",
+  "/img/top_2.png",
+  "/img/top_3.jpg",
+  "/img/top_4.png",
+  "/img/top_5.jpg",
+  "/img/top_6.png",
+  "/img/top_7.jpg",
+  "/img/top_8.png",
 ];
 
 export default function Slideshow() {
