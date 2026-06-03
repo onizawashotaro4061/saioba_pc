@@ -393,6 +393,6 @@ export const stagesData: StageData[] = [
     ],
     venue: "下北沢スターダスト",
     flyerImages: ["/img/fly_konto1_a.png", "/img/fly_konto1_b.png"],
-    thumbnailImages: ["/img/thum_konto_1.jpg"],
+    thumbnailImages: ["/img/thum_konto_1.webp"],
   },
 ];
