@@ -23,7 +23,7 @@ export default function Home() {
             <div className="h-4 sm:h-6"></div>
             <div className="max-w-2xl mx-auto">
               <Image
-                src="/img/thum_konto_1.jpg"
+                src="/img/thum_konto_1.webp"
                 alt="劇団さいおうば第一回コント公演『白馬非馬』"
                 width={800}
                 height={450}
