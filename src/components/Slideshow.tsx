@@ -4,14 +4,14 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const slides = [
-  "/img/top_1.jpg",
-  "/img/top_2.png",
-  "/img/top_3.jpg",
-  "/img/top_4.png",
-  "/img/top_5.jpg",
-  "/img/top_6.png",
-  "/img/top_7.jpg",
-  "/img/top_8.png",
+  "/img/top_1.webp",
+  "/img/top_2.webp",
+  "/img/top_3.webp",
+  "/img/top_4.webp",
+  "/img/top_5.webp",
+  "/img/top_6.webp",
+  "/img/top_7.webp",
+  "/img/top_8.webp",
 ];
 
 export default function Slideshow() {
@@ -42,6 +42,7 @@ export default function Slideshow() {
             height={1080}
             className="w-full h-auto object-cover"
             priority={index === 0}
+            loading={index === 0 ? "eager" : "lazy"}
           />
         </div>
       ))}
