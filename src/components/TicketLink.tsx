@@ -15,7 +15,7 @@ export default function TicketLink() {
   return (
     <div className="text-center">
       <Link
-        href="https://ticket.corich.jp/apply/441041/333/"
+        href="https://ticket.corich.jp/apply/456782/"
         target="_blank"
         rel="noopener noreferrer"
         onClick={handleClick}

@@ -63,8 +63,20 @@ export default function NextStage() {
             </p>
 
             <div className="h-6 sm:h-8 md:h-10"></div>
-            <div className="text-lg sm:text-xl font-bold mb-2 text-gray-800 font-subheading-ja">【作・演出】</div>
-            <div className="text-sm sm:text-base md:text-lg mb-4 text-gray-700 font-body-ja">{latestStage.director}</div>
+            {latestStage.playwright ? (
+              <>
+                <div className="text-lg sm:text-xl font-bold mb-2 text-gray-800 font-subheading-ja">【脚本】</div>
+                <div className="text-sm sm:text-base md:text-lg mb-4 text-gray-700 font-body-ja">{latestStage.playwright}</div>
+                <div className="h-2 sm:h-3"></div>
+                <div className="text-lg sm:text-xl font-bold mb-2 text-gray-800 font-subheading-ja">【演出】</div>
+                <div className="text-sm sm:text-base md:text-lg mb-4 text-gray-700 font-body-ja">{latestStage.director}</div>
+              </>
+            ) : (
+              <>
+                <div className="text-lg sm:text-xl font-bold mb-2 text-gray-800 font-subheading-ja">【作・演出】</div>
+                <div className="text-sm sm:text-base md:text-lg mb-4 text-gray-700 font-body-ja">{latestStage.director}</div>
+              </>
+            )}
 
             <div className="h-2 sm:h-3"></div>
             <div className="text-lg sm:text-xl font-bold mb-2 text-gray-800 font-subheading-ja">【出演】</div>
@@ -93,50 +105,24 @@ export default function NextStage() {
             <div className="text-sm sm:text-base md:text-lg mb-3 text-gray-700 font-body-ja">
               <div className="space-y-2">
                 <div className="flex gap-8">
-                  <span className="w-32">3月27日(金)</span>
-                  <span>19:00</span>
-                  <span>さいおうば・ターリーズ</span>
+                  <span className="w-32">7月11日(土)</span>
+                  <span>18:00</span>
                 </div>
                 <div className="flex gap-8">
-                  <span className="w-32">3月28日(土)</span>
-                  <span>12:00</span>
-                  <span>さいおうば・ターリーズ</span>
-                </div>
-                <div className="flex gap-8">
-                  <span className="w-32">3月28日(土)</span>
-                  <span>15:30</span>
-                  <span>カナリ・さいおうば</span>
-                </div>
-                <div className="flex gap-8">
-                  <span className="w-32">3月28日(土)</span>
-                  <span>19:00</span>
-                  <span>カナリ・ターリーズ</span>
-                </div>
-                <div className="flex gap-8">
-                  <span className="w-32">3月29日(日)</span>
-                  <span>12:30</span>
-                  <span>カナリ・さいおうば</span>
-                </div>
-                <div className="flex gap-8">
-                  <span className="w-32">3月29日(日)</span>
-                  <span>16:00</span>
-                  <span>カナリ・ターリーズ</span>
+                  <span className="w-32">7月12日(日)</span>
+                  <span>13:00／16:00／19:00</span>
                 </div>
               </div>
               <div className="h-3"></div>
-              <p className="text-xs sm:text-sm text-gray-600">※1公演につき3団体中2団体が上演いたします。</p>
-              <p className="text-xs sm:text-sm text-gray-600">※受付開始・開場は開演の30分前を予定しております。</p>
+              <p className="text-xs sm:text-sm text-gray-600">※全4ステージ</p>
+              <p className="text-xs sm:text-sm text-gray-600">※上演時間は約80分を予定</p>
+              <p className="text-xs sm:text-sm text-gray-600">※開場は各回開演30分前</p>
             </div>
 
             <div className="h-2 sm:h-3"></div>
             <div className="text-lg sm:text-xl font-bold mb-2 text-gray-800 font-subheading-ja">【料金】</div>
             <div className="text-sm sm:text-base md:text-lg mb-4 text-gray-700 font-body-ja">
-              <p>ALL: ¥3000<br />見に行く割: #ターリーズ #劇団カナリ #劇団さいおうば のいずれかを含むポストをXに投稿、またはInstagramで各団体アカウントをメンションした投稿でチケット料金 ¥300 OFF！受付での証明は不要！</p>
-            </div>
-
-            <div className="h-2 sm:h-3"></div>
-            <div className="text-sm sm:text-base md:text-lg mb-4 text-gray-700 font-body-ja">
-              その他、2団体の詳細は<a href="https://x.com/tarizu0406/status/2025541162300502081?s=20" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">こちらから</a>
+              <p>一律2000円</p>
             </div>
             {/* フライヤー画像を料金の下に配置 */}
             {latestStage.flyerImages && latestStage.flyerImages.length > 0 && (

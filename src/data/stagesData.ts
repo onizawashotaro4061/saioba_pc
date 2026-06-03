@@ -7,6 +7,7 @@ export interface StageData {
   synopsis: string;
   introduction: string;
   director: string;
+  playwright?: string;
   cast: string[];
   friendlyCast: string[];
   staff: {
@@ -360,5 +361,38 @@ export const stagesData: StageData[] = [
     venue: "小劇場楽園",
     flyerImages: ["/img/fly_BESTBURN_a.jpg", "/img/fly_BESTBURN_b.jpg"],
     thumbnailImages: ["/img/thumbnail_BESTBURN.jpg"],
+  },
+  {
+    id: 13,
+    title: "劇団さいおうば\n第一回コント公演\n『白馬非馬』",
+    subtitle: "",
+    titleImage: "/img/title_konto_1.png",
+    youtubeUrl: "",
+    synopsis: "詭弁の一種。古代中国の思想家・公孫竜が唱えた。\n「馬」は“形”だけを指す言葉だが、「白馬」は“白い”という色の条件まで含む別の概念である。\nつまり「白馬」と「馬」は同一ではなく、ゆえに白馬は馬ではない、という理屈。\nこれに対し、別の思想家は「そんな説があっても役に立たない」と、身も蓋もない反論をした。\n全六本の、詭弁と野暮が入り乱れるコント公演。",
+    introduction: "",
+    playwright: "寺腰玄（劇団さいおうば）",
+    director: "虻蜂トラヲ（ちょっとはいしゃく）",
+    cast: [
+      "奥津力哉",
+      "金子レイチェル奈々（劇団さいおうば）",
+      "小林アスマ（劇団さいおうば）",
+      "三浦那由多（劇団さいおうば）",
+      "本山裕也（劇団さいおうば）",
+    ],
+    friendlyCast: [],
+    staff: [
+      { role: "演出助手", names: "森井紡" },
+      { role: "舞台監督・会計", names: "馬詰洋史(劇団さいおうば)" },
+      { role: "舞台監督補佐", names: "石田由衣(劇団さいおうば)" },
+      { role: "制作", names: "土田一人(劇団さいおうば)、石田由衣" },
+      { role: "照明", names: "金子レイチェル奈々、山田穐仁" },
+      { role: "音響", names: "馬詰洋史、小林アスマ" },
+      { role: "衣装・小道具", names: "石田由衣" },
+      { role: "宣伝美術", names: "佐藤諒一" },
+      { role: "グッズ制作・映像", names: "寺腰玄" },
+    ],
+    venue: "小劇場楽園",
+    flyerImages: ["/img/fly_konto1_a.png", "/img/fly_konto1_b.png"],
+    thumbnailImages: ["/img/thum_konto_1.jpg"],
   },
 ];
