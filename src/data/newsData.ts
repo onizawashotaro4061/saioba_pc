@@ -138,4 +138,13 @@ export const newsData: NewsData[] = [
     link: "http://3yfilm.co.jp/fukuiraptor",
     linkText: "詳細はこちらから",
   },
+  {
+    id: 17,
+    date: "2026/06/12",
+    title: "【ドラマ情報】「世にも奇妙な物語’26 夏の特別編」に寺腰玄が脚本として参加",
+    content: "フジテレビ「世にも奇妙な物語’26 夏の特別編」『おじさんになりたい』の脚本を、主宰・寺腰玄が担当いたします。\n放送：6/27(土) 21:00\n脚本：寺腰玄（劇団さいおうば）",
+    images: ["/img/news_17.jpg"],
+    link: "https://www.fujitv.co.jp/kimyo/",
+    linkText: "詳細はこちらから",
+  },
 ];
