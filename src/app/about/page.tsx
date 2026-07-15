@@ -12,7 +12,7 @@ export default function About() {
       <div className="h-4 sm:h-6"></div>
       <div className="flex justify-center mb-6 sm:mb-8">
         <Image
-          src="/img/about_20260531.jpg"
+          src="/img/about_260716.jpg"
           alt="劇団さいおうば"
           width={800}
           height={600}

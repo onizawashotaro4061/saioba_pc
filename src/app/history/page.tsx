@@ -91,6 +91,13 @@ const stages = [
     venue: "小劇場楽園",
     image: "/img/thumbnail_BESTBURN.jpg",
   },
+  {
+    id: 13,
+    date: "2026.7.11.～2026.7.12.",
+    title: "第一回コント公演『白馬非馬』",
+    venue: "下北沢スターダスト",
+    image: "/img/thum_konto_1.webp",
+  },
 ];
 
 export default function History() {
