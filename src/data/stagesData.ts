@@ -390,6 +390,7 @@ export const stagesData: StageData[] = [
       { role: "衣装・小道具", names: "石田由衣" },
       { role: "宣伝美術", names: "佐藤諒一" },
       { role: "グッズ制作・映像", names: "寺腰玄" },
+      { role: "スペシャルサンクス", names: "金子奈緒様、澤田華様、横山奏様" },
     ],
     venue: "下北沢スターダスト",
     flyerImages: ["/img/fly_konto1_a.png", "/img/fly_konto1_b.png"],
