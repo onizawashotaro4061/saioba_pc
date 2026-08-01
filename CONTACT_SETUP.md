@@ -32,13 +32,13 @@
 
 ```env
 # Gmail SMTP設定
-EMAIL_USER=gekidansaiouba@gmail.com
+EMAIL_USER=saiouba.info@gmail.com
 EMAIL_PASS=生成したアプリパスワードをここに貼り付け（スペースなし）
 ```
 
 **例：**
 ```env
-EMAIL_USER=gekidansaiouba@gmail.com
+EMAIL_USER=saiouba.info@gmail.com
 EMAIL_PASS=abcdefghijklmnop
 ```
 
@@ -95,7 +95,7 @@ npm run dev
 4. 送信ボタンをクリック
 
 5. 確認：
-   - gekidansaiouba@gmail.comに問い合わせメールが届く
+   - saiouba.info@gmail.comに問い合わせメールが届く
    - 入力したメールアドレスに自動返信メールが届く
 
 ## トラブルシューティング
@@ -147,7 +147,7 @@ Vercelにデプロイする場合：
 1. Vercelダッシュボードにログイン
 2. プロジェクトの「Settings」→「Environment Variables」
 3. 以下の環境変数を追加：
-   - `EMAIL_USER`: gekidansaiouba@gmail.com
+   - `EMAIL_USER`: saiouba.info@gmail.com
    - `EMAIL_PASS`: アプリパスワード
 4. 再デプロイ
 
