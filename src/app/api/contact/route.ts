@@ -32,6 +32,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // 環境変数の確認
+    console.log("EMAIL_USER:", process.env.EMAIL_USER);
+    console.log("EMAIL_PASS exists:", !!process.env.EMAIL_PASS);
+
     // Nodemailerトランスポーターの設定
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -58,13 +62,15 @@ ${message}
     `;
 
     // 劇団へのメール送信
+    console.log("劇団へのメール送信開始...");
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER, // gekidansaiouba@gmail.com
+      to: process.env.EMAIL_USER, // saiouba.info@gmail.com
       subject: `【お問い合わせ】${category} - ${name}様`,
       text: emailContent,
       replyTo: email, // 返信先を問い合わせ者のメールアドレスに設定
     });
+    console.log("劇団へのメール送信成功");
 
     // 問い合わせ者への自動返信メール
     const autoReplyContent = `
@@ -90,19 +96,21 @@ ${message}
 ────────────────────────
 劇団さいおうば
 公式サイト: https://saiouba.com
-Email: gekidansaiouba@gmail.com
+Email: saiouba.info@gmail.com
 ────────────────────────
 
 ※このメールは自動送信されています。
 ※ご返信いただいても対応できかねますので、ご了承ください。
     `;
 
+    console.log("自動返信メール送信開始...");
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: email,
       subject: "【劇団さいおうば】お問い合わせを受け付けました",
       text: autoReplyContent,
     });
+    console.log("自動返信メール送信成功");
 
     console.log("お問い合わせメール送信完了:", name, email);
 
@@ -112,6 +120,10 @@ Email: gekidansaiouba@gmail.com
     );
   } catch (error) {
     console.error("Error processing contact form:", error);
+    console.error("Error details:", {
+      message: error instanceof Error ? error.message : "Unknown error",
+      stack: error instanceof Error ? error.stack : undefined,
+    });
     return NextResponse.json(
       { error: "送信に失敗しました。しばらく時間をおいて再度お試しください。" },
       { status: 500 }
