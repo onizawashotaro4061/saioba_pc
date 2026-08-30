@@ -157,4 +157,13 @@ export const newsData: NewsData[] = [
     link: "https://x.com/no_name_actors/status/2086338245768483169?s=20",
     linkText: "募集要項のお求めはこちらから",
   },
+  {
+    id: 19,
+    date: "2026/08/09",
+    title: "【お知らせ】公式ポッドキャスト「ほらふきさいおうば」開始！",
+    content: "記念すべき第1回は、\n#1「ポケモンの次は位牌がくる！」\n\nパーソナリティを務めるのは、劇団さいおうばの三浦那由多と金子レイチェル奈々。\n二人が気になること、好きなもの、どうでもいいことまで、自由気ままに語り合います。\n\n毎月第2・第4木曜日 18:00更新。\n[YouTube](https://www.youtube.com/playlist?list=PLW6lpu5b7DhM)、[Spotify](https://open.spotify.com/show/7aT9dB4AkeZsbMVdj6raAd)、[Apple podcast](https://podcasts.apple.com/jp/podcast/%E3%81%BB%E3%82%89%E3%81%B5%E3%81%8D%E3%81%95%E3%81%84%E3%81%8A%E3%81%86%E3%81%B0/id6805816464)、[Amazon Music](https://music.amazon.co.jp/podcasts/095e2c54-95fa-4fa5-b8ee-66ef5958dd8c/%E3%81%BB%E3%82%89%E3%81%B5%E3%81%8D%E3%81%95%E3%81%84%E3%81%8A%E3%81%86%E3%81%B0)にて配信中です。\n\n【パーソナリティ】\n三浦那由多 × 金子レイチェル奈々\n\n【スタッフ】\n構成・エピソードサムネイル：寺腰玄（劇団さいおうば）\n録音・編集・音楽：馬詰洋史（劇団さいおうば）\n番組ロゴ：田口太陽\n音響協力：佐藤諒一",
+    images: ["/img/news_19.webp"],
+    link: "/podcast",
+    linkText: "ポッドキャストページへ",
+  },
 ];

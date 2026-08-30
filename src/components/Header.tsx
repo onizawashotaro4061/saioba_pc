@@ -14,6 +14,7 @@ export default function Header() {
   const navItems = [
     { href: "/nextstage", label: "NEXTSTAGE" },
     { href: "/news", label: "NEWS" },
+    { href: "/podcast", label: "PODCAST" },
     { href: "/about", label: "ABOUT" },
     { href: "/member", label: "MEMBER" },
     { href: "/history", label: "HISTORY" },
