@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { podcastData } from "@/data/podcastData";
 
 export const metadata = {
   title: "ほらふきさいおうば | 劇団さいおうば公式サイト",
@@ -10,22 +11,22 @@ export default function Podcast() {
   const platforms = [
     {
       name: "YouTube",
-      url: "https://www.youtube.com/playlist?list=PLW6lpu5b7DhM",
+      url: podcastData.latestEpisode.youtube,
       color: "bg-red-600 hover:bg-red-700",
     },
     {
       name: "Spotify",
-      url: "https://open.spotify.com/show/7aT9dB4AkeZsbMVdj6raAd",
+      url: podcastData.latestEpisode.spotify,
       color: "bg-green-600 hover:bg-green-700",
     },
     {
       name: "Apple Podcast",
-      url: "https://podcasts.apple.com/jp/podcast/%E3%81%BB%E3%82%89%E3%81%B5%E3%81%8D%E3%81%95%E3%81%84%E3%81%8A%E3%81%86%E3%81%B0/id6805816464",
+      url: podcastData.latestEpisode.applePodcast,
       color: "bg-purple-600 hover:bg-purple-700",
     },
     {
       name: "Amazon Music",
-      url: "https://music.amazon.co.jp/podcasts/095e2c54-95fa-4fa5-b8ee-66ef5958dd8c/%E3%81%BB%E3%82%89%E3%81%B5%E3%81%8D%E3%81%95%E3%81%84%E3%81%8A%E3%81%86%E3%81%B0",
+      url: podcastData.latestEpisode.amazonMusic,
       color: "bg-sky-600 hover:bg-sky-700",
     },
   ];
@@ -62,7 +63,7 @@ export default function Podcast() {
 
             <div className="mb-8">
               <h3 className="text-lg sm:text-xl font-bold mb-4 text-gray-800 font-subheading-ja">
-                配信プラットフォーム
+                最新回を聴く
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {platforms.map((platform) => (
