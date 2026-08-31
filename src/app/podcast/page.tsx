@@ -103,17 +103,40 @@ export default function Podcast() {
               <h3 className="text-lg sm:text-xl font-bold mb-3 text-gray-800 font-subheading-ja">
                 過去の放送回
               </h3>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4 font-body-ja">
-                過去の放送回はYouTubeの再生リストからご覧いただけます。
-              </p>
-              <a
-                href="https://www.youtube.com/playlist?list=PLW6lpu5b7DhM"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg transition-all transform hover:scale-105 shadow-md text-base sm:text-lg font-body-ja font-semibold"
-              >
-                YouTube再生リストを見る
-              </a>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a
+                  href="https://www.youtube.com/playlist?list=PLW6lpu5b7DhM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-red-600 hover:bg-red-700 text-white px-6 py-4 rounded-lg text-center transition-all transform hover:scale-105 shadow-md text-base sm:text-lg font-body-ja font-semibold"
+                >
+                  YouTube
+                </a>
+                <a
+                  href="https://open.spotify.com/show/7aT9dB4AkeZsbMVdj6raAd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-lg text-center transition-all transform hover:scale-105 shadow-md text-base sm:text-lg font-body-ja font-semibold"
+                >
+                  Spotify
+                </a>
+                <a
+                  href="https://podcasts.apple.com/jp/podcast/%E3%81%BB%E3%82%89%E3%81%B5%E3%81%8D%E3%81%95%E3%81%84%E3%81%8A%E3%81%86%E3%81%B0/id6805816464"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-4 rounded-lg text-center transition-all transform hover:scale-105 shadow-md text-base sm:text-lg font-body-ja font-semibold"
+                >
+                  Apple Podcast
+                </a>
+                <a
+                  href="https://music.amazon.co.jp/podcasts/095e2c54-95fa-4fa5-b8ee-66ef5958dd8c/%E3%81%BB%E3%82%89%E3%81%B5%E3%81%8D%E3%81%95%E3%81%84%E3%81%8A%E3%81%86%E3%81%B0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-sky-600 hover:bg-sky-700 text-white px-6 py-4 rounded-lg text-center transition-all transform hover:scale-105 shadow-md text-base sm:text-lg font-body-ja font-semibold"
+                >
+                  Amazon Music
+                </a>
+              </div>
             </div>
           </div>
         </div>
