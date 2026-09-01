@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Slideshow from "@/components/Slideshow";
+import PodcastNotification from "@/components/PodcastNotification";
 import { newsData } from "@/data/newsData";
 
 export default function Home() {
@@ -68,6 +69,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <PodcastNotification />
     </>
   );
 }
