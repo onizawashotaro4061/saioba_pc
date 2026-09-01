@@ -14,9 +14,9 @@ export default function Header() {
   const navItems = [
     { href: "/nextstage", label: "NEXTSTAGE" },
     { href: "/news", label: "NEWS" },
-    { href: "/podcast", label: "PODCAST" },
     { href: "/about", label: "ABOUT" },
     { href: "/member", label: "MEMBER" },
+    { href: "/podcast", label: "PODCAST" },
     { href: "/history", label: "HISTORY" },
     { href: "https://gekidansaiouba.stores.jp/", label: "STORE" },
     { href: "/contact", label: "CONTACT" },
